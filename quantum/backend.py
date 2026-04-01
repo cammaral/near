@@ -41,6 +41,8 @@ def get_simulator(
     noisy=True,
     extra_amp_damp_1q=0.0,
     extra_amp_damp_2q=0.0,
+    use_gpu=False,
+    target_gpus=None,
 ):
     fake_backend = FakeBrisbane()
 
@@ -52,11 +54,28 @@ def get_simulator(
 
     transpile_backend = fake_backend
 
+    sim_kwargs = {}
+    if use_gpu:
+        sim_kwargs["device"] = "GPU"
+        if target_gpus is not None:
+            sim_kwargs["target_gpus"] = target_gpus
+
     if not noisy:
-        run_backend = AerSimulator()
+        # ideal simulation: statevector is GPU-supported
+        if use_gpu:
+            sim_kwargs["method"] = "statevector"
+        run_backend = AerSimulator(**sim_kwargs)
+
     else:
+        # noisy simulation: density_matrix is GPU-supported and explicit
+        if use_gpu:
+            sim_kwargs["method"] = "density_matrix"
+
         if extra_amp_damp_1q == 0.0 and extra_amp_damp_2q == 0.0:
-            run_backend = AerSimulator.from_backend(fake_backend)
+            run_backend = AerSimulator.from_backend(
+                fake_backend,
+                **sim_kwargs,
+            )
         else:
             noise_model = _build_noise_model_with_extra_damping(
                 fake_backend,
@@ -66,6 +85,7 @@ def get_simulator(
             run_backend = AerSimulator(
                 noise_model=noise_model,
                 basis_gates=noise_model.basis_gates,
+                **sim_kwargs,
             )
 
     return run_backend, transpile_backend

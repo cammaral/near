@@ -35,18 +35,18 @@ class NoiseConfig:
 
 CONFIG = {
     # problem / ansatz
-    "n_qubits": 10,
+    "n_qubits": 5,
     "depth": 1,
     "n_instances": 5,
     "seed": 1924,
 
     # NDAR outer loop
-    "K": 6,
+    "K": 5,
     "n_epochs": 10,
 
     # shots for optimization objective and for final sampling each step
-    "shots_opt": 256,
-    "shots_sample": 256,
+    "shots_opt": 100,
+    "shots_sample": 100,
 
     # optimizer
     "adam_lr": 0.10,
@@ -57,12 +57,14 @@ CONFIG = {
     "spsa_gamma": 0.101,
 
     # random-search baseline
-    # optimizer uses roughly 3 objective calls per epoch (plus, minus, theta)
-    # so this makes the random baseline budget similar per outer step.
     "n_random_thetas_per_step": None,
 
     # plotting
     "selected_instance_for_fig1": 0,
+
+    # gpu
+    "use_gpu": True,
+    "target_gpus": [0],   # or None
 
     # output
     "out_dir": "results_vqa_ndar_sk",
@@ -769,7 +771,12 @@ def main() -> None:
             noisy=noise.noisy,
             extra_amp_damp_1q=noise.extra_amp_damp_1q,
             extra_amp_damp_2q=noise.extra_amp_damp_2q,
+            use_gpu=cfg.get("use_gpu", False),
+            target_gpus=cfg.get("target_gpus", None),
         )
+
+        print("Simulator device:", getattr(simulator.options, "device", "unknown"))
+        print("Simulator method:", getattr(simulator.options, "method", "unknown"))
 
         ansatz, ansatz_params = build_brickwall(cfg["n_qubits"], cfg["depth"])
         n_params = len(ansatz_params)
