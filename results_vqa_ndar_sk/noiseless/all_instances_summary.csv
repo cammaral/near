@@ -1,0 +1,101 @@
+method,step,cumulative_budget_units,gauge_before,best_bitstring_current_frame,best_bitstring_original,attractor_bitstring_original,min_energy_current_frame,expected_energy_current_frame,best_ratio_current_frame,expected_ratio_current_frame,zero_ratio_current_frame,best_energy_original,best_ar_original,best_cut_original,attractor_energy_original,attractor_ar_original,attractor_cut_original,note,cum_best_energy_original,cum_best_ar_original,instance_idx,noise
+plain_vqa,0,10,00000,00011,00011,00000,-2.0,0.36,1.0,-0.18,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,0,noiseless
+plain_vqa,1,20,00000,00011,00011,00000,-2.0,-1.06,1.0,0.53,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,0,noiseless
+plain_vqa,2,30,00000,00011,00011,00000,-2.0,-1.88,1.0,0.94,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,0,noiseless
+plain_vqa,3,40,00000,00011,00011,00000,-2.0,-2.0,1.0,1.0,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,0,noiseless
+plain_vqa,4,50,00000,00011,00011,00000,-2.0,-1.96,1.0,0.98,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,0,noiseless
+ndar_vqa,0,10,00000,00011,00011,00000,-2.0,0.56,1.0,-0.28,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,0,noiseless
+ndar_vqa,1,20,00011,00000,00011,00011,-2.0,0.2,1.0,-0.1,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,0,noiseless
+ndar_vqa,2,30,00011,01011,01000,00011,-2.0,-0.6,1.0,0.3,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,0,noiseless
+ndar_vqa,3,40,01000,01011,00011,01000,-2.0,-0.82,1.0,0.41,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,0,noiseless
+ndar_vqa,4,50,00011,01011,01000,00011,-2.0,-1.18,1.0,0.59,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,0,noiseless
+random_search,0,10,00000,11110,11110,00000,-2.0,-1.8,1.0,0.9,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,0,noiseless
+random_search,1,20,00000,10110,10110,00000,-2.0,-1.92,1.0,0.96,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,0,noiseless
+random_search,2,30,00000,10110,10110,00000,-2.0,-1.72,1.0,0.86,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,0,noiseless
+random_search,3,40,00000,11110,11110,00000,-2.0,-1.8,1.0,0.9,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,0,noiseless
+random_search,4,50,00000,11110,11110,00000,-2.0,-1.8,1.0,0.9,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,0,noiseless
+ndar_no_opt,0,10,00000,00011,00011,00000,-2.0,1.5,1.0,-0.75,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,0,noiseless
+ndar_no_opt,1,20,00011,01011,01000,00011,-2.0,1.32,1.0,-0.66,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,0,noiseless
+ndar_no_opt,2,30,01000,00100,01100,01000,-2.0,0.1,1.0,-0.05,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,0,noiseless
+ndar_no_opt,3,40,01100,00101,01001,01100,-2.0,-1.7,1.0,0.85,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,0,noiseless
+ndar_no_opt,4,50,01001,00101,01100,01001,-2.0,-1.04,1.0,0.52,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,0,noiseless
+plain_vqa,0,10,00000,10001,10001,00000,-2.0,1.08,1.0,-0.54,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,1,noiseless
+plain_vqa,1,20,00000,10011,10011,00000,-2.0,0.2,1.0,-0.1,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,1,noiseless
+plain_vqa,2,30,00000,11011,11011,00000,-2.0,-0.12,1.0,0.06,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,1,noiseless
+plain_vqa,3,40,00000,10011,10011,00000,-2.0,-0.52,1.0,0.26,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,1,noiseless
+plain_vqa,4,50,00000,10011,10011,00000,-2.0,-1.4,1.0,0.7,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,1,noiseless
+ndar_vqa,0,10,00000,00001,00001,00000,-2.0,1.08,1.0,-0.54,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,1,noiseless
+ndar_vqa,1,20,00001,01111,01110,00001,-2.0,-0.06,1.0,0.03,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,1,noiseless
+ndar_vqa,2,30,01110,10101,11011,01110,-2.0,-0.32,1.0,0.16,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,1,noiseless
+ndar_vqa,3,40,11011,10101,01110,11011,-2.0,0.28,1.0,-0.14,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,1,noiseless
+ndar_vqa,4,50,01110,10101,11011,01110,-2.0,-0.72,1.0,0.36,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,1,noiseless
+random_search,0,10,00000,01100,01100,00000,-2.0,-1.46,1.0,0.73,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,1,noiseless
+random_search,1,20,00000,01100,01100,00000,-2.0,-1.5,1.0,0.75,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,1,noiseless
+random_search,2,30,00000,00100,00100,00000,-2.0,-1.4,1.0,0.7,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,1,noiseless
+random_search,3,40,00000,00100,00100,00000,-2.0,-1.52,1.0,0.76,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,1,noiseless
+random_search,4,50,00000,00100,00100,00000,-2.0,-1.46,1.0,0.73,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,1,noiseless
+ndar_no_opt,0,10,00000,10001,10001,00000,-2.0,1.4,1.0,-0.7,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,1,noiseless
+ndar_no_opt,1,20,10001,11111,01110,10001,-2.0,-0.52,1.0,0.26,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,1,noiseless
+ndar_no_opt,2,30,01110,01111,00001,01110,-2.0,-0.48,1.0,0.24,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,1,noiseless
+ndar_no_opt,3,40,00001,01111,01110,00001,-2.0,1.24,1.0,-0.62,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,1,noiseless
+ndar_no_opt,4,50,01110,10101,11011,01110,-2.0,-0.38,1.0,0.19,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,1,noiseless
+plain_vqa,0,10,00000,11101,11101,00000,-4.0,-1.26,1.0,0.315,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-4.0,1.0,2,noiseless
+plain_vqa,1,20,00000,11101,11101,00000,-4.0,-1.72,1.0,0.43,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-4.0,1.0,2,noiseless
+plain_vqa,2,30,00000,11101,11101,00000,-4.0,-2.44,1.0,0.61,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-4.0,1.0,2,noiseless
+plain_vqa,3,40,00000,11101,11101,00000,-4.0,-3.3,1.0,0.825,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-4.0,1.0,2,noiseless
+plain_vqa,4,50,00000,11101,11101,00000,-4.0,-3.46,1.0,0.865,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-4.0,1.0,2,noiseless
+ndar_vqa,0,10,00000,11101,11101,00000,-4.0,-2.3,1.0,0.575,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-4.0,1.0,2,noiseless
+ndar_vqa,1,20,11101,11111,00010,11101,-4.0,-0.98,1.0,0.245,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-4.0,1.0,2,noiseless
+ndar_vqa,2,30,00010,11011,11001,00010,-2.0,-1.46,0.5,0.365,1.0,-2.0,0.5,2.0,-4.0,1.0,4.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-4.0,1.0,2,noiseless
+ndar_vqa,3,40,11001,10011,01010,11001,-4.0,-3.32,1.0,0.83,0.5,-4.0,1.0,4.0,-2.0,0.5,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-4.0,1.0,2,noiseless
+ndar_vqa,4,50,01010,11111,10101,01010,-4.0,-0.88,1.0,0.22,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-4.0,1.0,2,noiseless
+random_search,0,10,00000,10101,10101,00000,-4.0,-3.32,1.0,0.83,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-4.0,1.0,2,noiseless
+random_search,1,20,00000,10101,10101,00000,-4.0,-2.88,1.0,0.72,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-4.0,1.0,2,noiseless
+random_search,2,30,00000,10101,10101,00000,-4.0,-3.16,1.0,0.79,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-4.0,1.0,2,noiseless
+random_search,3,40,00000,10101,10101,00000,-4.0,-3.26,1.0,0.815,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-4.0,1.0,2,noiseless
+random_search,4,50,00000,10101,10101,00000,-4.0,-3.24,1.0,0.81,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-4.0,1.0,2,noiseless
+ndar_no_opt,0,10,00000,11101,11101,00000,-4.0,-0.98,1.0,0.245,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0,2,noiseless
+ndar_no_opt,1,20,11101,10111,01010,11101,-4.0,-0.58,1.0,0.145,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0,2,noiseless
+ndar_no_opt,2,30,01010,10111,11101,01010,-4.0,-0.84,1.0,0.21,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0,2,noiseless
+ndar_no_opt,3,40,11101,10111,01010,11101,-4.0,-0.48,1.0,0.12,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0,2,noiseless
+ndar_no_opt,4,50,01010,10111,11101,01010,-4.0,-0.52,1.0,0.13,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0,2,noiseless
+plain_vqa,0,10,00000,10110,10110,00000,-4.0,-2.18,1.0,0.545,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-4.0,1.0,3,noiseless
+plain_vqa,1,20,00000,10110,10110,00000,-4.0,-2.08,1.0,0.52,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-4.0,1.0,3,noiseless
+plain_vqa,2,30,00000,11000,11000,00000,-4.0,-2.54,1.0,0.635,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-4.0,1.0,3,noiseless
+plain_vqa,3,40,00000,11000,11000,00000,-4.0,-3.24,1.0,0.81,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-4.0,1.0,3,noiseless
+plain_vqa,4,50,00000,11000,11000,00000,-4.0,-3.88,1.0,0.97,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-4.0,1.0,3,noiseless
+ndar_vqa,0,10,00000,11001,11001,00000,-4.0,-2.14,1.0,0.535,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-4.0,1.0,3,noiseless
+ndar_vqa,1,20,11001,11111,00110,11001,-4.0,-2.86,1.0,0.715,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-4.0,1.0,3,noiseless
+ndar_vqa,2,30,00110,11111,11001,00110,-4.0,-3.78,1.0,0.945,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-4.0,1.0,3,noiseless
+ndar_vqa,3,40,11001,11110,00111,11001,-4.0,-3.96,1.0,0.99,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-4.0,1.0,3,noiseless
+ndar_vqa,4,50,00111,11110,11001,00111,-4.0,-3.94,1.0,0.985,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-4.0,1.0,3,noiseless
+random_search,0,10,00000,11110,11110,00000,-4.0,-3.5,1.0,0.875,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-4.0,1.0,3,noiseless
+random_search,1,20,00000,00111,00111,00000,-4.0,-3.36,1.0,0.84,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-4.0,1.0,3,noiseless
+random_search,2,30,00000,00001,00001,00000,-4.0,-3.86,1.0,0.965,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-4.0,1.0,3,noiseless
+random_search,3,40,00000,00001,00001,00000,-4.0,-3.84,1.0,0.96,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-4.0,1.0,3,noiseless
+random_search,4,50,00000,00001,00001,00000,-4.0,-3.9,1.0,0.975,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-4.0,1.0,3,noiseless
+ndar_no_opt,0,10,00000,11001,11001,00000,-4.0,-1.44,1.0,0.36,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0,3,noiseless
+ndar_no_opt,1,20,11001,11110,00111,11001,-4.0,-2.26,1.0,0.565,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0,3,noiseless
+ndar_no_opt,2,30,00111,11111,11000,00111,-4.0,-2.48,1.0,0.62,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0,3,noiseless
+ndar_no_opt,3,40,11000,11111,00111,11000,-4.0,-2.42,1.0,0.605,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0,3,noiseless
+ndar_no_opt,4,50,00111,11111,11000,00111,-4.0,-2.74,1.0,0.685,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0,3,noiseless
+plain_vqa,0,10,00000,00100,00100,00000,-2.0,0.04,1.0,-0.02,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,4,noiseless
+plain_vqa,1,20,00000,00000,00000,00000,0.0,0.06,-0.0,-0.03,-0.0,0.0,-0.0,0.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,4,noiseless
+plain_vqa,2,30,00000,00100,00100,00000,-2.0,-0.02,1.0,0.01,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,4,noiseless
+plain_vqa,3,40,00000,00100,00100,00000,-2.0,0.16,1.0,-0.08,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,4,noiseless
+plain_vqa,4,50,00000,00100,00100,00000,-2.0,-0.46,1.0,0.23,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0,4,noiseless
+ndar_vqa,0,10,00000,00100,00100,00000,-2.0,-0.02,1.0,0.01,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,4,noiseless
+ndar_vqa,1,20,00100,00000,00100,00100,-2.0,-0.58,1.0,0.29,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,4,noiseless
+ndar_vqa,2,30,00100,00000,00100,00100,-2.0,-1.24,1.0,0.62,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,4,noiseless
+ndar_vqa,3,40,00100,00000,00100,00100,-2.0,-1.62,1.0,0.81,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,4,noiseless
+ndar_vqa,4,50,00100,00000,00100,00100,-2.0,-1.96,1.0,0.98,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,"NDAR outer step: optimize current transformed Hamiltonian, then remap using best sampled bitstring.",-2.0,1.0,4,noiseless
+random_search,0,10,00000,00100,00100,00000,-2.0,-1.2,1.0,0.6,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,4,noiseless
+random_search,1,20,00000,00100,00100,00000,-2.0,-1.1,1.0,0.55,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,4,noiseless
+random_search,2,30,00000,00100,00100,00000,-2.0,-1.44,1.0,0.72,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,4,noiseless
+random_search,3,40,00000,00100,00100,00000,-2.0,-1.12,1.0,0.56,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,4,noiseless
+random_search,4,50,00000,00100,00100,00000,-2.0,-1.26,1.0,0.63,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Random-parameter search on original Hamiltonian; keep the best parameter vector found so far.,-2.0,1.0,4,noiseless
+ndar_no_opt,0,10,00000,00100,00100,00000,-2.0,0.38,1.0,-0.19,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,4,noiseless
+ndar_no_opt,1,20,00100,00000,00100,00100,-2.0,-0.24,1.0,0.12,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,4,noiseless
+ndar_no_opt,2,30,00100,01000,01100,00100,-2.0,0.18,1.0,-0.09,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,4,noiseless
+ndar_no_opt,3,40,01100,00000,01100,01100,-2.0,1.74,1.0,-0.87,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,4,noiseless
+ndar_no_opt,4,50,01100,00000,01100,01100,-2.0,1.96,1.0,-0.98,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0,4,noiseless

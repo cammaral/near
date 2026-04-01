@@ -1,0 +1,23 @@
+{
+  "n_qubits": 5,
+  "depth": 1,
+  "n_instances": 5,
+  "seed": 1924,
+  "K": 5,
+  "n_epochs": 10,
+  "shots_opt": 100,
+  "shots_sample": 100,
+  "adam_lr": 0.1,
+  "adam_beta1": 0.9,
+  "adam_beta2": 0.999,
+  "adam_eps": 1e-08,
+  "spsa_c": 0.15,
+  "spsa_gamma": 0.101,
+  "n_random_thetas_per_step": 30,
+  "selected_instance_for_fig1": 0,
+  "use_gpu": true,
+  "target_gpus": [
+    0
+  ],
+  "out_dir": "results_vqa_ndar_sk"
+}
