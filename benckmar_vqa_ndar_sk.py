@@ -20,7 +20,8 @@ from quantum.hamiltonian import (
 from optimizer.adam_spsa import optimize
 from ndar.run import sample_theta_full
 
-
+from qiskit_aer import AerSimulator
+print("Available devices:", AerSimulator.available_devices())
 # ============================================================
 # Config
 # ============================================================
@@ -772,7 +773,6 @@ def main() -> None:
             extra_amp_damp_1q=noise.extra_amp_damp_1q,
             extra_amp_damp_2q=noise.extra_amp_damp_2q,
             use_gpu=cfg.get("use_gpu", False),
-            target_gpus=cfg.get("target_gpus", None),
         )
 
         print("Simulator device:", getattr(simulator.options, "device", "unknown"))

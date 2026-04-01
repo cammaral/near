@@ -1,7 +1,7 @@
-from qiskit_aer import AerSimulator
 from qiskit_aer.noise import NoiseModel, amplitude_damping_error
 from qiskit_ibm_runtime.fake_provider import FakeBrisbane
-
+from qiskit_aer import AerSimulator
+print("Available devices:", AerSimulator.available_devices())
 
 def _build_noise_model_with_extra_damping(
     fake_backend,
@@ -17,7 +17,6 @@ def _build_noise_model_with_extra_damping(
 
     if extra_amp_damp_1q > 0.0:
         err1 = amplitude_damping_error(extra_amp_damp_1q)
-
         for g in one_q_gates:
             for qargs in target[g]:
                 if len(qargs) == 1:
@@ -27,7 +26,6 @@ def _build_noise_model_with_extra_damping(
         err2 = amplitude_damping_error(extra_amp_damp_2q).tensor(
             amplitude_damping_error(extra_amp_damp_2q)
         )
-
         for g in two_q_gates:
             for qargs in target[g]:
                 if len(qargs) == 2:
@@ -42,7 +40,6 @@ def get_simulator(
     extra_amp_damp_1q=0.0,
     extra_amp_damp_2q=0.0,
     use_gpu=False,
-    target_gpus=None,
 ):
     fake_backend = FakeBrisbane()
 
@@ -55,27 +52,21 @@ def get_simulator(
     transpile_backend = fake_backend
 
     sim_kwargs = {}
+
     if use_gpu:
         sim_kwargs["device"] = "GPU"
-        if target_gpus is not None:
-            sim_kwargs["target_gpus"] = target_gpus
 
     if not noisy:
-        # ideal simulation: statevector is GPU-supported
         if use_gpu:
             sim_kwargs["method"] = "statevector"
         run_backend = AerSimulator(**sim_kwargs)
 
     else:
-        # noisy simulation: density_matrix is GPU-supported and explicit
         if use_gpu:
             sim_kwargs["method"] = "density_matrix"
 
         if extra_amp_damp_1q == 0.0 and extra_amp_damp_2q == 0.0:
-            run_backend = AerSimulator.from_backend(
-                fake_backend,
-                **sim_kwargs,
-            )
+            run_backend = AerSimulator.from_backend(fake_backend, **sim_kwargs)
         else:
             noise_model = _build_noise_model_with_extra_damping(
                 fake_backend,
