@@ -1,0 +1,6 @@
+method,step,cumulative_budget_units,gauge_before,best_bitstring_current_frame,best_bitstring_original,attractor_bitstring_original,min_energy_current_frame,expected_energy_current_frame,best_ratio_current_frame,expected_ratio_current_frame,zero_ratio_current_frame,best_energy_original,best_ar_original,best_cut_original,attractor_energy_original,attractor_ar_original,attractor_cut_original,note,cum_best_energy_original,cum_best_ar_original
+ndar_no_opt,0,10,0000000,0110001,0110001,0000000,-2.0,1.7,1.0,-0.85,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0
+ndar_no_opt,1,20,0110001,1111001,1001000,0110001,-2.0,1.66,1.0,-0.83,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0
+ndar_no_opt,2,30,1001000,1111001,0110001,1001000,-2.0,1.98,1.0,-0.99,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0
+ndar_no_opt,3,40,0110001,1111001,1001000,0110001,-2.0,1.66,1.0,-0.83,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0
+ndar_no_opt,4,50,1001000,1111001,0110001,1001000,-2.0,2.0,1.0,-1.0,1.0,-2.0,1.0,2.0,-2.0,1.0,2.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-2.0,1.0

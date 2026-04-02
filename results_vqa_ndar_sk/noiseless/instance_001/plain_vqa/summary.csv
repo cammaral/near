@@ -1,6 +1,6 @@
 method,step,cumulative_budget_units,gauge_before,best_bitstring_current_frame,best_bitstring_original,attractor_bitstring_original,min_energy_current_frame,expected_energy_current_frame,best_ratio_current_frame,expected_ratio_current_frame,zero_ratio_current_frame,best_energy_original,best_ar_original,best_cut_original,attractor_energy_original,attractor_ar_original,attractor_cut_original,note,cum_best_energy_original,cum_best_ar_original
-plain_vqa,0,10,00000,10001,10001,00000,-2.0,1.08,1.0,-0.54,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0
-plain_vqa,1,20,00000,10011,10011,00000,-2.0,0.2,1.0,-0.1,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0
-plain_vqa,2,30,00000,11011,11011,00000,-2.0,-0.12,1.0,0.06,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0
-plain_vqa,3,40,00000,10011,10011,00000,-2.0,-0.52,1.0,0.26,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0
-plain_vqa,4,50,00000,10011,10011,00000,-2.0,-1.4,1.0,0.7,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0
+plain_vqa,0,10,0000000,1100111,1100111,0000000,0.0,3.34,-0.0,-1.67,-0.0,0.0,-0.0,0.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,0.0,-0.0
+plain_vqa,1,20,0000000,1100111,1100111,0000000,0.0,1.64,-0.0,-0.82,-0.0,0.0,-0.0,0.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,0.0,-0.0
+plain_vqa,2,30,0000000,0100000,0100000,0000000,-2.0,1.12,1.0,-0.56,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0
+plain_vqa,3,40,0000000,1100000,1100000,0000000,0.0,0.48,-0.0,-0.24,-0.0,0.0,-0.0,0.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0
+plain_vqa,4,50,0000000,0100000,0100000,0000000,-2.0,0.8,1.0,-0.4,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0

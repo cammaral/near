@@ -1,0 +1,6 @@
+method,step,cumulative_budget_units,gauge_before,best_bitstring_current_frame,best_bitstring_original,attractor_bitstring_original,min_energy_current_frame,expected_energy_current_frame,best_ratio_current_frame,expected_ratio_current_frame,zero_ratio_current_frame,best_energy_original,best_ar_original,best_cut_original,attractor_energy_original,attractor_ar_original,attractor_cut_original,note,cum_best_energy_original,cum_best_ar_original
+plain_vqa,0,10,0000000,0110111,0110111,0000000,-2.0,1.72,1.0,-0.86,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0
+plain_vqa,1,20,0000000,0110111,0110111,0000000,-2.0,1.68,1.0,-0.84,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0
+plain_vqa,2,30,0000000,0110111,0110111,0000000,-2.0,1.6,1.0,-0.8,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0
+plain_vqa,3,40,0000000,1110110,1110110,0000000,-2.0,0.88,1.0,-0.44,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0
+plain_vqa,4,50,0000000,1110110,1110110,0000000,-2.0,0.74,1.0,-0.37,-0.0,-2.0,1.0,2.0,0.0,-0.0,0.0,Budget-matched cumulative optimization on original Hamiltonian.,-2.0,1.0

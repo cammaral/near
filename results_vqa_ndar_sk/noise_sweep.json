@@ -1,15 +1,9 @@
 [
   {
-    "name": "noiseless",
-    "noisy": false,
-    "extra_amp_damp_1q": 0.0,
-    "extra_amp_damp_2q": 0.0
-  },
-  {
-    "name": "default_noise",
+    "name": "strong_damping",
     "noisy": true,
-    "extra_amp_damp_1q": 0.0,
-    "extra_amp_damp_2q": 0.0
+    "extra_amp_damp_1q": 0.02,
+    "extra_amp_damp_2q": 0.08
   },
   {
     "name": "moderate_damping",
@@ -18,9 +12,15 @@
     "extra_amp_damp_2q": 0.02
   },
   {
-    "name": "strong_damping",
+    "name": "default_noise",
     "noisy": true,
-    "extra_amp_damp_1q": 0.02,
-    "extra_amp_damp_2q": 0.08
+    "extra_amp_damp_1q": 0.0,
+    "extra_amp_damp_2q": 0.0
+  },
+  {
+    "name": "noiseless",
+    "noisy": false,
+    "extra_amp_damp_1q": 0.0,
+    "extra_amp_damp_2q": 0.0
   }
 ]

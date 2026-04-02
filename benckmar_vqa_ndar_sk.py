@@ -37,8 +37,8 @@ class NoiseConfig:
 
 CONFIG = {
     # problem / ansatz
-    "n_qubits": 5,
-    "depth": 1,
+    "n_qubits": 7,
+    "depth": 2,
     "n_instances": 5,
     "seed": 1924,
 
@@ -73,10 +73,10 @@ CONFIG = {
 }
 
 NOISE_SWEEP = [
-    NoiseConfig(name="noiseless", noisy=False),
-    NoiseConfig(name="default_noise", noisy=True),
-    NoiseConfig(name="moderate_damping", noisy=True, extra_amp_damp_1q=0.005, extra_amp_damp_2q=0.02),
     NoiseConfig(name="strong_damping", noisy=True, extra_amp_damp_1q=0.02, extra_amp_damp_2q=0.08),
+    NoiseConfig(name="moderate_damping", noisy=True, extra_amp_damp_1q=0.005, extra_amp_damp_2q=0.02),
+    NoiseConfig(name="default_noise", noisy=True),
+    NoiseConfig(name="noiseless", noisy=False),
 ]
 
 

@@ -1,6 +1,6 @@
 method,step,cumulative_budget_units,gauge_before,best_bitstring_current_frame,best_bitstring_original,attractor_bitstring_original,min_energy_current_frame,expected_energy_current_frame,best_ratio_current_frame,expected_ratio_current_frame,zero_ratio_current_frame,best_energy_original,best_ar_original,best_cut_original,attractor_energy_original,attractor_ar_original,attractor_cut_original,note,cum_best_energy_original,cum_best_ar_original
-ndar_no_opt,0,10,00000,11101,11101,00000,-4.0,-0.98,1.0,0.245,-0.0,-4.0,1.0,4.0,0.0,-0.0,0.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0
-ndar_no_opt,1,20,11101,10111,01010,11101,-4.0,-0.58,1.0,0.145,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0
-ndar_no_opt,2,30,01010,10111,11101,01010,-4.0,-0.84,1.0,0.21,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0
-ndar_no_opt,3,40,11101,10111,01010,11101,-4.0,-0.48,1.0,0.12,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0
-ndar_no_opt,4,50,01010,10111,11101,01010,-4.0,-0.52,1.0,0.13,1.0,-4.0,1.0,4.0,-4.0,1.0,4.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-4.0,1.0
+ndar_no_opt,0,10,0000000,0011011,0011011,0000000,-10.0,-2.3,1.0,0.22999999999999998,-0.0,-10.0,1.0,10.0,0.0,-0.0,0.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-10.0,1.0
+ndar_no_opt,1,20,0011011,1111111,1100100,0011011,-10.0,-2.64,1.0,0.264,1.0,-10.0,1.0,10.0,-10.0,1.0,10.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-10.0,1.0
+ndar_no_opt,2,30,1100100,0001000,1101100,1100100,-8.0,-2.58,0.8,0.258,1.0,-8.0,0.8,8.0,-10.0,1.0,10.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-10.0,1.0
+ndar_no_opt,3,40,1101100,1111111,0010011,1101100,-8.0,-2.66,0.8,0.266,0.8,-8.0,0.8,8.0,-8.0,0.8,8.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-10.0,1.0
+ndar_no_opt,4,50,0010011,0001000,0011011,0010011,-10.0,-2.86,1.0,0.286,0.8,-10.0,1.0,10.0,-8.0,0.8,8.0,NDAR-style remap loop with fixed circuit parameters and no optimization.,-10.0,1.0
