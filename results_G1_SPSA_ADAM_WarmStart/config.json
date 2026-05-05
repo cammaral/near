@@ -1,0 +1,28 @@
+{
+  "k": 3,
+  "beta": 0.5,
+  "num_qubits": 13,
+  "alpha": 19.5,
+  "maxiter": 300,
+  "epsilon": 0.2,
+  "graph_path": "G1.txt",
+  "num_nodes": 800,
+  "num_edges": 19176,
+  "configs": [
+    [
+      "statevector",
+      null,
+      10
+    ],
+    [
+      "100 shots",
+      100,
+      10
+    ],
+    [
+      "1500 shots",
+      1500,
+      10
+    ]
+  ]
+}

@@ -37,13 +37,13 @@ class NoiseConfig:
 
 CONFIG = {
     # problem / ansatz
-    "n_qubits": 7,
-    "depth": 2,
-    "n_instances": 5,
+    "n_qubits": 20,
+    "depth": 3,
+    "n_instances": 10,
     "seed": 1924,
 
     # NDAR outer loop
-    "K": 5,
+    "K": 6,
     "n_epochs": 10,
 
     # shots for optimization objective and for final sampling each step
@@ -69,7 +69,7 @@ CONFIG = {
     "target_gpus": [0],   # or None
 
     # output
-    "out_dir": "results_vqa_ndar_sk",
+    "out_dir": "results_vqa_ndar_sk_n_20",
 }
 
 NOISE_SWEEP = [

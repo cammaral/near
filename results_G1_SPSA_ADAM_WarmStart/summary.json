@@ -1,0 +1,23 @@
+{
+  "statevector": {
+    "n_runs": 10,
+    "mean_final_cut": 9628.7,
+    "std_final_cut": 79.43683024894686,
+    "min_final_cut": 9477.0,
+    "max_final_cut": 9746.0
+  },
+  "100 shots": {
+    "n_runs": 10,
+    "mean_final_cut": 10698.6,
+    "std_final_cut": 445.3807809055079,
+    "min_final_cut": 9758.0,
+    "max_final_cut": 11311.0
+  },
+  "1500 shots": {
+    "n_runs": 10,
+    "mean_final_cut": 9854.6,
+    "std_final_cut": 127.04660562171664,
+    "min_final_cut": 9603.0,
+    "max_final_cut": 10051.0
+  }
+}
